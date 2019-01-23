@@ -10,14 +10,20 @@ HTTP.interceptors.request.use(function (config: any) {
     return config
 })
 
+export class FoodMenuService {
+    static getFoodMenu (): AxiosPromise<any> {
+        return HTTP.get('foodmenu')
+    }
+}
+
 export class ClubsService {
     static getAllClubs (): AxiosPromise<any> {
         return HTTP.get('clubs')
     }
 }
 
-export class FoodMenuService {
-    static getFoodMenu (): AxiosPromise<any> {
-        return HTTP.get('foodmenu')
+export class EventsService {
+    static getAllEvents (): AxiosPromise<any> {
+        return HTTP.get('events')
     }
 }
