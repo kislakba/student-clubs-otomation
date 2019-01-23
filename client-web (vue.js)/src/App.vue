@@ -31,9 +31,9 @@ export default {
   }
 }
 .home {
-  margin-top: 90px;
+  margin-top: 150px;
 }
 .about {
-  margin-top: 90px;
+  margin-top: 150px;
 }
 </style>
